@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#profile{
+       width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+#profile_box{
+    width: 450px;
+    height: auto;
+   border-radius: 15px;
+    background-color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile_pic{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px black;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#profile_icon{
+    font-size: 130px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #aca5a5;
+    z-index: 0;
+}
+
+#profile_upload{
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+}
+
+#img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  
+}
+
+
+#profile_box p{
+    font-size: 20px;
+    
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+  
+
+}
+
+
+#next{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: navajowhite;
+    font-size: 20px;
+    color: white;
+ 
+    background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+
+}
+
+
+#web_page{
+    width: 100%;
+    height: 600px;
+    display: none;
+
+}
+
+#img_page{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+}
+
+#user,#email,#pass,#mobile{
+    margin-left: 50px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body{
+    background: #603813;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b29f94, #603813); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+
+
+
+#profile_h{
+    width:100%;
+    height: 120px;
+    background: #ec008c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+       justify-content: center;
+}
+
+#circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 60px;
+    background-color: purple;
+    cursor: pointer;
+    
+}
+
+#btn_co,#btn_co2{
+    cursor: pointer;
+}
+
+#circle:hover{
+    width: 148px;
+    height: 148px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#page_name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+#page_section{
+    width: 100%;
+    height: 470px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts,#player,#logout{
+    width: 350px;
+    height: 300px;
+background-color: aliceblue;
+    float: left;
+    margin: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contacts:hover,#player:hover,#logout:hover{
+    width: 370px;
+    height: 320px;
+    transition: 0.5s;
+   
+
+
+}
+
+#contacts i,#player i,#logout i{
+    font-size: 90px;
+    color: purple;
+
+}
+
+#contacts p ,#player p ,#logout p{
+    font-size: 34px;
+    color: purple;
+    margin-top: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+#name_h{
+    width: 100%;
+    height: 10px;
+
+    margin-top: 90px;
+}
+
+#footer{
+    width: 100%;
+    height: 30px;
+    background-color: purple;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer small{
+    text-align: center;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  
+}
+
+#logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#btn_logout{
+    cursor: pointer;
+}
+
+#img_up{
+    width: 650px;
+    height: 550px;
+   background-color: #ec008c; 
+    position: fixed;
+    top: 90px;
+    left: 0;
+ 
+  
+}
+
+#image_view{
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+#device{
+    opacity: 0;
+}
+
+#change_pic,#del_pic,#back{
+    float: right;
+    width: 110px;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background-color: orangered;
+    font-style: normal;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+#change_pic input{
+    width: 110px;
+    height: 30px;
+    border: 1px solid red;
+    margin-top: -25px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#del_pic{
+    margin-top: -430px;
+}
+
+#back{
+    margin-top: -360px;
+}
+
+
+
+#change_pic:hover , #back:hover,#del_pic:hover{
+    background-color: rgb(0, 246, 127);
+    color: black;
+}
+
+
+@media(max-width:990px)
+{
+    #img_up{
+        width: 100%;
+        background: #636363;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+    }
+
+    #image_view{
+        width: 100%;
+        height: 450px;
+    }
+
+    
+#del_pic{
+  position: absolute;
+  bottom: 0;
+  right: 250px;
+  border-radius: 15px;
+}
+
+#back{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+}
+
+#change_pic{
+    position: absolute;
+    bottom: 0;
+    right:120px;
+   border-radius: 15px;
+}
+
+#change_pic:hover , #back:hover,#del_pic:hover{
+    background-color: rgb(0, 246, 127);
+    color: black;
+}
+
+
+
+    #page_section{
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    #contacts,#player,#logout{
+        width: 60%;
+        font-size: 15px;
+        
+    }
+
+    
+    #contacts:hover,#player:hover,#logout:hover{
+        width: 62%;
+
+        font-size: 15px;
+        
+    }
+
+    
+    
+    
+    #contacts i,#player i,#logout i{
+        
+
+        font-size: 40px;
+        
+    }
+
+    #contacts p,#player p,#logout p{
+        
+
+        font-size: 25px;
+        
+    }
+
+    #footer{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        
+    }
+
+ 
+
+    
+
+}
+
