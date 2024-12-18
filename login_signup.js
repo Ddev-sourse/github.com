@@ -93,7 +93,7 @@ log_frm.onsubmit=function()
       if(btoa(pass_lo.value) == reg_pass){
         
                   
-        window.location.replace("profile/profile.html");
+        window.location.replace("profile.html");
         sessionStorage.setItem("user",btoa(email_lo.value));
 
 
