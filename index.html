@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stp.com</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+    <div id="screen">
+        <div id="container" >
+            <!--loginn-->
+                    <div id="login_box" class="animate__animated animate__flipInY">
+                    <h1 class="animate__animated animate__bounce animate__delay-1s" id="t"> Login</h1>
+                    <form autocomplete="off" id="login_frm">
+
+                        <input type="email" required="required" placeholder="Email Id" id="email_l" name="email">
+                        <small id="l_email_war"><i class="fas fa-exclamation-triangle"></i>Email id is not registered...</small>
+                        <input type="password" name="password" required="required" id="password_l" placeholder="Password">
+                        <small id="l_pass_war"><i class="fas fa-exclamation-triangle"></i>Wrong password</small>
+
+                        <button type="submit" id="btn_login">Login</button>
+                    </form>
+                    <p>Don't have an account ? <span onclick="signin()">sign up</span></p>
+                
+                    </div>
+
+                    <!--signup-->
+
+                    <div id="sign_box" class="animate__animated animate__flipInY">
+                        <h1 class="animate__animated animate__bounce animate__delay-1s">sign up</h1>
+                        <form autocomplete="off" id="sign_frm">
+
+                            <input type="text" name="username" required="required" id="username" placeholder=" Enter your name">
+                            <input type="email" name="email" id="email_s" required="required" placeholder="Email Id" >
+                            <small id="email_notice"><i class="fas fa-exclamation-triangle"></i>Email id already exit..</small>
+                            <input type="text" name="username" id="phone" required="required" placeholder="Mobile no.">
+                            <input type="password" name="password" id="password_s" required="required" placeholder="Create Password">
+
+                            <button type="submit" id="btn_sign">sign up</button>
+                        </form>
+                        <p>Already have a account.<span onclick="login_i()"> Login</span></p>
+                        </div>
+        </div>
+    </div>
+
+<!--scrips of the code-->
+    <script src="script/index.js"></script>
+    <script src="script/login_signup.js"></script>
+</body>
+</html>
