@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ #img_box{
+    width: 200px;
+    height: 200px;
+    float: left;
+
+   position: relative;
+   top: 0;
+   left: 0;
+  
+}
+
+#img_box img{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#circle{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgb(76, 2, 248);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    margin: 0px 30px 30px 0px;
+}
+
+body{
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #69f462, rgb(134, 244, 174),#69f462);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #69f462,rgb(134, 244, 174), #69f462); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #69f462,rgb(134, 244, 174), #69f462);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #69f462,rgb(134, 244, 174), #69f462); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+
+#add{
+   width: 80px;
+   height: 80px;
+    font-size: 50px;
+    color: purple;
+   position: fixed;
+   bottom: 100px;
+   right: 200px;
+   cursor: pointer;
+}
+
+#all_no_box{
+    width: 40%;
+    height: 550px;
+
+    position: fixed;
+    top: 150px;
+    left: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+ 
+}
+
+#search_box{
+    width: 95%;
+    height: 30px;
+    margin-top: -35px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: purple solid 1px;
+    font-size: 20px;
+    padding: 10px;
+    color: purple;
+
+}
+
+
+#number_box{
+    width: 100%;
+    height: 550px;
+
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#number_box::-webkit-scrollbar{
+    width: 7px;
+   
+}
+
+#number_box::-webkit-scrollbar-track{
+   background-color:inherit;
+}
+
+#number_box::-webkit-scrollbar-thumb{
+   background-color: purple;
+   border-radius: 5px;
+}
+
+#number_box div {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#number_box #m{
+    margin-top: 5px;
+}
+
+
+#number_box #n{
+    margin-bottom: 5px;
+}
+
+
+#user{
+    float: left;
+    margin: 20px 0px 0px 430px;
+    font-size: 34px;
+}
+
+
+
+#new_box{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    display: none;
+}
+
+#user i{
+    font-size: 40px;
+}
+
+#input_box_new_con{
+    width: 30%;
+    height: auto;
+    border:none;
+    background-color: rgb(224, 191, 217);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 200px auto;
+   
+}
+
+#input_box_new_con input{
+    width: 80%;
+    height: 30px;
+    border: blue 3px solid;
+    margin: 10px;
+    padding: 10px;
+    border-left: 10px solid blue;
+    outline: none;
+    font-size: 17px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+#input_box_new_con button{
+    width: 25%;
+    height: 30px;
+    font-size: 20px;
+   
+    background-color: blue;
+    border: none;
+    outline: none;
+    color:  rgb(224, 191, 217);
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+}
+
+#p{
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media(max-width : 600px){
+   
+#add{
+    width: 60px;
+    height: 60px;
+
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 222;
+ }
+
+ 
+ #img_box{
+    width: 100px;
+    height: 100px;
+   
+  
+}
+
+
+#img_box img{
+    width: 110px;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#circle{
+    width: 100px;
+    height: 100px;
+
+    bottom: -40px;
+    right: -40px;
+   
+}
+
+
+#input_box_new_con{
+    width: 90%;
+
+   
+}
+
+
+#all_no_box{
+    width: 90%;
+    height: 500px;
+
+    position: absolute;
+    top: 110px;
+    left: 20px;
+
+   
+}
+}
+
+
+@media(max-width : 1024px){
+
+
+#all_no_box{
+
+    margin-left: -150px;
+
+}
+
+#add{
+right: 70px;
+}
+
+#user{
+    margin-left:180px;
+}
+}
+
+
+@media(max-width : 768px){
+    #new_box #input_box_new_con{
+        width: 40%;
+    }
+
+    #all_no_box{
+        border: none;
+        margin-left: -240px;
+    
+    }
+
+    #number_box{
+        width:350px;
+    }
+    
+    #add{
+    right: 70px;
+    }
+    
+    #user{
+        margin-left:180px;
+    }
+
+    #img_box{
+        width:150px ;
+        height: 150px;
+ 
+    }
+    
+#img_box img{
+    width: 150px;
+    height: 150px;
+}
+    
+#circle{
+    width: 100px;
+    height: 100px;
+}
+
+#search_box{
+    margin-left: 20px;
+}
+    }
+
+
+    
+
+@media(max-width : 426px){
+
+    #new_box #input_box_new_con{
+        width: 80%;
+    }
+
+    #all_no_box{
+       width: 100%;
+       margin-left: -5px;
+    
+    }
+
+    #number_box{
+        width:100%;
+    }
+    
+    #add{
+    right: 70px;
+    }
+    
+    #user{
+    margin:0;
+    }
+
+    #img_box{
+        width:150px ;
+        height: 150px;
+ 
+    }
+    
+#img_box img{
+ display: none;
+}
+    
+#circle{
+    display: none;
+}
+
+#search_box{
+    margin-left: 20px;
+}
+    }
+
+   @media(max-width : 481px){
+
+    #new_box #input_box_new_con{
+        width: 80%;
+    }
+
+    #all_no_box{
+       width: 100%;
+       margin-left: -5px;
+    
+    }
+
+    #number_box{
+        width:100%;
+    }
+    
+    #add{
+    right: 70px;
+    }
+    
+    #user{
+    margin:0;
+    }
+
+    #img_box{
+        width:150px ;
+        height: 150px;
+ 
+    }
+    
+#img_box img{
+ display: none;
+}
+    
+#circle{
+    display: none;
+}
+
+#search_box{
+    margin-left: 20px;
+}
+    }
+
+    
+@media(max-width : 320px){
+    #new_box #input_box_new_con{
+        width: 100%;
+    }
+
+
+    #all_no_box{
+        width: 100%;
+        margin-left: -30px;
+     
+     }
+
+     #user{
+        margin-top: -130px;
+        margin-left: 70px;
+        }
+        #number{
+            width: 100px;
+            border: 1px solid red;
+        }
+
+        #number_box div{
+            width:350px;
+        }
+
+}
+
+
+
+  
+@media(max-width : 757px){
+#for_r{
+    margin-left: -60px;
+}
+
+}
