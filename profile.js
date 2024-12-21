@@ -2,7 +2,7 @@ window.onload=function()
 {
 	
 	if(sessionStorage.getItem("user")==null){
-		window.location.replace("../index.html");
+		window.location.replace("index.html");
 	}
 	else
 	{
