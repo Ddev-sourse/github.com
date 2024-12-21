@@ -9,12 +9,12 @@ window.onload=function()
 		//app contacts
 		var app_c = document.getElementById("btn_co");
 			app_c.onclick=function(){
-				window.location.assign("app/contacts/contact.html");
+				window.location.assign("contact.html");
 			}	
 
 		var app_c2 = document.getElementById("btn_co2");
 			app_c2.onclick=function(){
-				window.location.assign("app/contacts/contact.html");
+				window.location.assign("contact.html");
 			}	
 			
 
