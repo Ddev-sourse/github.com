@@ -1,7 +1,7 @@
 window.onload = function(){
 
 if(sessionStorage.getItem("user")==null){
-    window.location.replace("index.html");
+    window.location.replace("../../../index.html");
    }
 else{
             var con_btn = document.getElementById("add");
@@ -21,7 +21,63 @@ else{
             
                 var name_value = document.getElementById("user_name").value;
                 var no_value = document.getElementById("user_no").value;
-                alert(name_value);
+               var number_data = {mobile_name:name_value,mobile_no:no_value};
+              var text_data = JSON.stringify(number_data);
+              var url = sessionStorage.getItem("user");
+              if(name_value!="" && no_value != ""){
+                localStorage.setItem(url+"_contacts_"+name_value,text_data);
+                add_btn.style.backgroundColor="green";
+               
+                setTimeout(function(){
+                    
+                    var new_add = document.getElementById("new_box");
+                    new_add.style.display="none";
+                    add_btn.style.backgroundColor="blue";
+                    var name_value = document.getElementById("user_name");
+                    var no_value = document.getElementById("user_no");
+                    name_value.value="";
+                    no_value.value="";
+                    name_value.style.borderColor="blue";
+                    no_value.style.borderColor="blue";
+                    window.location.reload();
+                 
+                },1000);
+              }
+              else
+              {
+                var name_r = document.getElementById("user_name");
+              
+                var name_e = document.getElementById("user_no");
+            
+                if(name_r.value==""){
+                    name_r.style.borderColor="red";
+                    add_btn.style.backgroundColor="red";
+                    name_r.onclick=function(){
+                        name_r.style.borderColor="blue";
+                        name_e.style.borderColor="blue";
+                    }
+                }
+                else if(name_e.value==""){
+                    name_e.style.borderColor="red";
+                    add_btn.style.backgroundColor="red";
+                    name_e.onclick=function(){
+                        name_e.style.borderColor="blue";
+                    }
+                   
+                }
+                if(name_r.value=="" && name_e.value==""){
+                    name_r.style.borderColor="red";
+                    name_e.style.borderColor="red";
+                    add_btn.style.backgroundColor="red";
+                }
+                return false;
+              }
+
+             
+   
+
+
+
             }
 
                     var url = sessionStorage.getItem("user");
@@ -34,7 +90,6 @@ else{
         }
 
 
-        
         var i;
         for(i=0;i<localStorage.length;i++){
             var l = localStorage.key(i);
@@ -93,5 +148,6 @@ else{
 
         }
 
-        
+
 }
+
