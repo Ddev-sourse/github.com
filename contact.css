@@ -109,7 +109,7 @@ body{
    border-radius: 5px;
 }
 
-#number_box div {
+#contacts{
     width: 100%;
     height: auto;
     background-color: white;
@@ -122,6 +122,13 @@ body{
     margin-top: 5px;
 }
 
+#m{
+    margin-top: -50px;
+}
+
+#n{
+   margin-left: 10px;
+}
 
 #number_box #n{
     margin-bottom: 5px;
@@ -134,7 +141,64 @@ body{
     font-size: 34px;
 }
 
+#tool{
+    width: 100px;
+    height: 50px;
+   
+   background-color: white;
+   margin-top: -60px;
+    float: right;
+  
 
+
+}
+
+#tool i{
+    font-size: 23px;
+    margin: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+#edit ,#edit2{
+    font-size: 25px;
+    margin-left: 9px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+#all_c{
+    width: 90%;
+   height: 90px;
+    background-color:white;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-top:15px;
+}
+
+#h1_name{
+    font-size: 22px;
+    font-weight: bold;
+ 
+}
+
+#h1_name_i{
+    font-size: 24px;
+    float: left;
+    margin-left: 20px;
+ margin-right: 10px;
+}
+#num_h1_i{
+    font-size: 23px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+#num_h1{
+    font-size: 21px;
+    
+    margin-left: 53px;
+    margin-top: 10px;
+}
 
 #new_box{
     width: 100%;
@@ -409,7 +473,7 @@ right: 70px;
     }
 
     
-@media(max-width : 320px){
+@media(max-width : 337px){
     #new_box #input_box_new_con{
         width: 100%;
     }
@@ -424,6 +488,7 @@ right: 70px;
      #user{
         margin-top: -130px;
         margin-left: 70px;
+      
         }
         #number{
             width: 100px;
