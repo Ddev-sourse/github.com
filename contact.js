@@ -1,15 +1,10 @@
 window.onload = function(){
 
-    var ac = document.getElementById("add");
-    ac.onchange=function(){
-        alert();
-    }
-
 
 
 
 if(sessionStorage.getItem("user")==null){
-    window.location.replace("../../../index.html");
+    window.location.replace("index.html");
    }
 else{
             var con_btn = document.getElementById("add");
