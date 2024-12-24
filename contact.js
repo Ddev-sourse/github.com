@@ -1,5 +1,13 @@
 window.onload = function(){
 
+    var ac = document.getElementById("add");
+    ac.onchange=function(){
+        alert();
+    }
+
+
+
+
 if(sessionStorage.getItem("user")==null){
     window.location.replace("../../../index.html");
    }
@@ -100,13 +108,15 @@ else{
                     var box = document.getElementById("number_box");
                       var contacts = document.createElement("DIV");
                       contacts.setAttribute("id", "all_c");
+                     
                       box.appendChild(contacts);
 
                       var h1_name = document.createElement("H1");
                       var h1_name_i = document.createElement("I");
                       h1_name_i.setAttribute("id", "h1_name_i");
-                      h1_name_i.setAttribute("class","fas fa-user-circle")
+                      h1_name_i.setAttribute("class","fas fa-user")
                       h1_name.setAttribute("id","h1_name");
+                      h1_name.setAttribute("class","name_contacts");  //name
                       h1_name.innerHTML+=obj.mobile_name;
                       
                       contacts.appendChild(h1_name);
@@ -129,12 +139,15 @@ else{
 
                       var tools = document.createElement("DIV");
                       tools.setAttribute("id" , "tool");
-                      var edit = document.createElement("I");
-                      edit.setAttribute("class","fa-solid fa-user-pen");
+                      var edit = document.createElement("I");           //EDIUY
+                      edit.setAttribute("class","fa-solid fa-user-pen edit");
+                   
                       tools.appendChild(edit);
 
                       var del = document.createElement("I");
-                      del.setAttribute("class","fa-solid fa-trash");
+                      del.setAttribute("class","fa-solid fa-trash clear" ); 
+                     //del
+                  
                       
                       tools.appendChild(del);
                       contacts.appendChild(tools);
@@ -142,12 +155,90 @@ else{
                       
                   
                     }
-                     
                 
+                    
+                    
+                    
 
 
         }
 
+        //search box
+      
+     
+        var box_se = document.getElementById("search_box");
+        box_se.oninput=function(){
+            var name_s = document.getElementsByClassName("name_contacts");
+           //alert(name_s[0].innerHTML);
+           var i;
+            for(i=0;i<name_s.length;i++){ 
+                
+                var q = name_s[i].innerHTML.replace('<i id="h1_name_i" class="fas fa-user-circle"></i>');
+            
+                if(q.toUpperCase() .match(box_se.value.toUpperCase()))
+                {
+                  name_s[i].parentElement.style.display="block";
+                 }
+                 else{
+                    name_s[i].parentElement.style.display="none";
+                 }
+                
+            }
+           
+        }
+     
+        var rem = document.getElementsByClassName("clear");
+        var i;
+        for(i=0;i<rem.length;i++)
+        {
+            rem[i].onclick=function()
+            {
+                var p = this.parentElement.parentElement;
+              var h1 =   p.getElementsByClassName("name_contacts")[0];
+              //alert();
 
+
+                localStorage.removeItem(url+"_contacts_"+h1.innerHTML.replace('<i id="h1_name_i" class="fas fa-user"></i>',''));
+                 p.className = "animate__animated animate__bounceOut";
+                 setTimeout(function(){
+                    p.remove();
+                 },1000);
+               
+            }
+        }
+
+   //edit
+        var e_t = document.getElementsByClassName("edit");
+        var l ;
+        for(l=0;l<e_t.length;l++)
+            {
+                e_t[l].onclick=function()
+                {
+                    var parant = this.parentElement.parentElement;
+                    var data = parant.getElementsByTagName("h1");
+                    var name = data[0].innerHTML.replace('<i id="h1_name_i" class="fas fa-user"></i>',"").trim();
+                    var number = data[1].innerHTML.replace('<i id="h1_name_i" class="fas fa-user"></i>',"").trim();
+                    
+                    var u_name = document.getElementById("user_name");
+                    var u_no = document.getElementById("user_no");
+                    var add = document.getElementById("add");
+                    var btn1 = document.getElementById("btn_close");
+                    var btn2 = document.getElementById("btn_add");
+                    var p = document.getElementById("p");
+
+                    u_name.value=name;
+                    u_no.value=number;
+                    btn1.style.display="none";
+                    btn2.style.backgroundColor="green";
+                    btn2.innerHTML="UPDATE"
+                    p.innerHTML="Edit Contacts"
+                    add.click();
+                    localStorage.removeItem(url+"_contacts_"+name);
+
+
+                }
+            }
+
+
+  
 }
-
