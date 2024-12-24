@@ -1,20 +1,18 @@
-window.onload=function()
-{
-	
+
 	if(sessionStorage.getItem("user")==null){
-		window.location.replace("index.html");
+		window.location.replace("../index.html");
 	}
 	else
 	{
 		//app contacts
 		var app_c = document.getElementById("btn_co");
 			app_c.onclick=function(){
-				window.location.assign("contact.html");
+				window.location.assign("app/contacts/contact.html");
 			}	
 
 		var app_c2 = document.getElementById("btn_co2");
 			app_c2.onclick=function(){
-				window.location.assign("contact.html");
+				window.location.assign("app/contacts/contact.html");
 			}	
 			
 
@@ -190,5 +188,18 @@ window.onload=function()
 	}
 		
 
-		
+		//TimeRanges
+setInterval( demo , 100);
+function demo(){
+var time = new Date();
+var t =  time.toLocaleTimeString();
+var d = time.toLocaleDateString();
+
+var eh = document.getElementById("time2");
+eh.innerHTML=d;
+
+var h = document.getElementById("time");
+h.innerHTML=t;
+
+
 }
