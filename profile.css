@@ -130,9 +130,9 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
 }
 
 body{
-    background: #603813;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b29f94, #603813); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    background: -webkit-linear-gradient(to right, #0008ff6d,rgb(41, 21, 227),#0008ff6d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0008ff6d,rgb(41, 21, 227), #0008ff6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       
 }
 
@@ -142,8 +142,8 @@ body{
     width:100%;
     height: 120px;
     background: #ec008c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, purple ,rgb(255, 255, 255), purple);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, purple, rgb(255, 255, 255), purple); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
        justify-content: center;
 }
@@ -174,6 +174,7 @@ background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, F
     font-weight: 400;
     font-style: normal;
     text-transform: capitalize;
+    color: white;
 
 }
 #page_section{
@@ -183,6 +184,7 @@ background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, F
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #contacts,#player,#logout{
@@ -380,7 +382,8 @@ background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, F
 
     #contacts,#player,#logout{
         width: 60%;
-        font-size: 15px;
+        font-size: 15px;    
+       
         
     }
 
@@ -422,3 +425,21 @@ background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, F
 
 }
 
+
+#time,#time2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+  
+
+}
+
+
+
+#time2{
+    margin-top: 95px;
+}
