@@ -149,13 +149,14 @@ background: linear-gradient(to right, purple, rgb(255, 255, 255), purple); /* W3
 }
 
 #circle{
-    width: 150px;
-    height: 150px;
+    width: 148px;
+    height: 148px;
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255);
     margin-top: 60px;
     background-color: purple;
     cursor: pointer;
+    padding: 10px;
     
 }
 
@@ -164,9 +165,9 @@ background: linear-gradient(to right, purple, rgb(255, 255, 255), purple); /* W3
 }
 
 #circle:hover{
-    width: 148px;
-    height: 148px;
-    border: 2px solid rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+
 }
 
 #page_name {
@@ -179,16 +180,17 @@ background: linear-gradient(to right, purple, rgb(255, 255, 255), purple); /* W3
 }
 #page_section{
     width: 100%;
-    height: 470px;
+    height: 470px;  
+    padding-left: 100px;
+    padding-top: 30px;
+    
    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 
 }
 
 #contacts,#player,#logout{
-    width: 350px;
+    width: 25%;
     height: 300px;
 background-color: aliceblue;
     float: left;
@@ -198,22 +200,22 @@ background-color: aliceblue;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
+
+    
 }
 
-#contacts:hover,#player:hover,#logout:hover{
-    width: 370px;
-    height: 320px;
-    transition: 0.5s;
-   
 
 
-}
+
 
 #contacts i,#player i,#logout i{
-    font-size: 90px;
+    font-size: 70px;
     color: purple;
 
 }
+
+
 
 #contacts p ,#player p ,#logout p{
     font-size: 34px;
@@ -268,10 +270,11 @@ background-color: aliceblue;
 #img_up{
     width: 650px;
     height: 550px;
-   background-color: #ec008c; 
+   background-color: #f69610; 
     position: fixed;
-    top: 90px;
+    top: 100px;
     left: 0;
+   
  
   
 }
@@ -329,104 +332,9 @@ background-color: aliceblue;
 }
 
 
-@media(max-width:990px)
-{
-    #img_up{
-        width: 100%;
-        background: #636363;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-
-    }
-
-    #image_view{
-        width: 100%;
-        height: 450px;
-    }
-
-    
-#del_pic{
-  position: absolute;
-  bottom: 0;
-  right: 250px;
-  border-radius: 15px;
-}
-
-#back{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 15px;
-}
-
-#change_pic{
-    position: absolute;
-    bottom: 0;
-    right:120px;
-   border-radius: 15px;
-}
-
-#change_pic:hover , #back:hover,#del_pic:hover{
-    background-color: rgb(0, 246, 127);
-    color: black;
-}
 
 
-
-    #page_section{
-        flex-direction: column;
-        height: 100%;
-
-    }
-
-    #contacts,#player,#logout{
-        width: 60%;
-        font-size: 15px;    
-       
-        
-    }
-
-    
-    #contacts:hover,#player:hover,#logout:hover{
-        width: 62%;
-
-        font-size: 15px;
-        
-    }
-
-    
-    
-    
-    #contacts i,#player i,#logout i{
-        
-
-        font-size: 40px;
-        
-    }
-
-    #contacts p,#player p,#logout p{
-        
-
-        font-size: 25px;
-        
-    }
-
-    #footer{
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        
-    }
-
- 
-
-    
-
-}
-
-
-#time,#time2{
+#time{
     position: absolute;
     top: 0;
     right: 0;
@@ -440,6 +348,309 @@ background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, F
 
 
 
-#time2{
-    margin-top: 95px;
+
+
+
+@media(max-width:1060px)
+{
+    
+#contacts,#player,#logout{
+    width: 28%;
+    margin-left: 5px;
+
+}
+
+#contacts{
+    margin-left: -15px;
+}
+#contacts i,#player i,#logout i{
+    font-size: 65px;
+}
+
+}
+
+
+
+
+@media(max-width:819px)
+{
+    
+#contacts,#player,#logout{
+    width: 28%;
+    margin-left: 5px;
+
+}
+
+#contacts{
+    margin-left: -20px;
+}
+
+#contacts i,#player i,#logout i{
+    font-size: 66px;
+}
+
+  
+}
+
+
+
+
+@media(max-width:789px)
+{
+    
+#contacts,#player,#logout{
+    width: 60%;
+    margin-left: 5px;
+    margin-left: 80px;   
+}
+   
+#contacts i,#player i,#logout i{
+    font-size: 60px;
+}
+
+}
+
+
+
+
+
+
+@media(max-width:650px)
+{
+   
+#img_up{
+    width: 540px;
+    height: 560px;
+   background-color: #ec008c; 
+    position: fixed;
+    top: 160px;
+    left: 50px;
+ 
+  
+}
+
+
+#image_view{
+   
+    margin-left: 20px;
+}
+
+
+#del_pic{
+   position: absolute;
+   bottom: 0;
+  left: 0;
+  border-radius: 0;
+
+}
+
+
+#back{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+ 
+ }
+
+ 
+#Change_pic{
+    position: absolute;
+    bottom: 0;
+    right: 230px;
+    border-radius: 0;
+ 
+ }
+
+}
+
+
+
+
+
+@media(max-width:599px)
+{
+   
+#img_up{
+    width: 500px;
+    height: 550px;
+   background-color: #ec008c; 
+    position: fixed;
+    top: 160px;
+    left: 40px;
+ 
+  
+}
+
+
+#image_view{
+   
+    margin-left: 0px;
+    
+}
+
+
+#del_pic{
+   position: absolute;
+   bottom: 0;
+  left: 0;
+  border-radius: 0;
+
+}
+
+
+#back{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+ 
+ }
+
+ 
+#Change_pic{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    border-radius: 0;
+ 
+ }
+
+}
+
+
+
+@media(max-width:426px)
+{
+   
+#img_up{
+    width: 100%;
+    height: 550px;
+   background-color: #ec008c; 
+    position: fixed;
+    top: 160px;
+    left:0;
+ 
+  
+}
+
+
+#image_view{
+    width: 95%;
+    margin-left: 8px;
+    
+}
+
+
+#del_pic{
+   position: absolute;
+   bottom: 0;
+  left: 0;
+  border-radius: 0;
+
+}
+
+
+#back{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+ 
+ }
+
+ 
+#Change_pic{
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    border-radius: 0;
+ 
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:537px)
+{
+    
+#contacts,#player,#logout{
+    width: 70%;
+    margin-left: 5px;
+    margin-left: 50px;  
+    height: 280px; 
+}
+   
+#contacts i,#player i,#logout i{
+    font-size: 60px;
+}
+
+}
+
+
+
+@media(max-width:479px)
+{
+    
+#contacts,#player,#logout{
+    width: 70%;
+    margin-left: 5px;
+    margin-left: 20px;  
+    height: 250px; 
+}
+
+    
+#contacts i,#player i,#logout i{
+    font-size: 60px;
+}
+
+}
+
+
+
+
+@media(max-width:420px)
+{
+    #time{
+        font-size: 15px;
+    }
+
+#contacts,#player,#logout{
+    width: 70%;
+    margin-left: 5px;
+    margin-left: -10px;  
+    height: 230px; 
+}
+
+    
+#contacts i,#player i,#logout i{
+    font-size: 60px;
+}
+
+}
+
+@media(max-width:360px)
+{
+    
+#contacts,#player,#logout{
+    width: 90%;
+    margin-left: 5px;
+    margin-left: -40px;  
+    height: 230px; 
+}
+
+    
+#contacts i,#player i,#logout i{
+    font-size: 50px;
+}
+
 }
