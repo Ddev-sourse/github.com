@@ -89,9 +89,11 @@
 		
 		//logout btn
 
-		var btn_out = document.getElementById("btn_logout");
+		var btn_out = document.getElementById("logout");
+		var btn_out_name = document.getElementById("btn_logout");
 		btn_out.onclick=function(){
-			btn_out.innerHTML="Please wait !"
+			btn_out_name.innerHTML="Please wait !";
+		
 			setTimeout(function(){
 				sessionStorage.clear();
 				window.location.reload();
@@ -193,10 +195,7 @@ setInterval( demo , 100);
 function demo(){
 var time = new Date();
 var t =  time.toLocaleTimeString();
-var d = time.toLocaleDateString();
 
-var eh = document.getElementById("time2");
-eh.innerHTML=d;
 
 var h = document.getElementById("time");
 h.innerHTML=t;
