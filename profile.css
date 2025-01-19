@@ -620,6 +620,13 @@ background-color: aliceblue;
 
 @media(max-width:420px)
 {
+    #img_up{
+        background-color: orange;
+        top:70px;
+    }
+    #change_pic{
+        right:130px;
+    }
     #time{
         font-size: 15px;
     }
