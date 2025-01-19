@@ -31,7 +31,7 @@ padding-top: 150px;
 
 
 #container{
-    width: 450px;
+    width: 30%;
     height: auto;
    border-radius: 15px;
     background-color: white;
@@ -157,6 +157,10 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
 
 @media(max-width:768px)
 {
+    #container{
+        width:70%;
+    }
+    
     #c_div{
         width: 250px;
         height: 250px;
