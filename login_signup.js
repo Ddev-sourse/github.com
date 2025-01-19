@@ -1,4 +1,8 @@
 //sign uo script
+
+
+                       
+
 var signup_frm = document.getElementById("sign_frm");
 signup_frm.onsubmit=function()
 {
@@ -95,8 +99,11 @@ log_frm.onsubmit=function()
                   
         window.location.replace("profile.html");
         sessionStorage.setItem("user",btoa(email_lo.value));
-
-
+        
+    var pass = document.getElementById("email_l");
+    var password = document.getElementById("password_l");
+    document.cookie="data="+pass.value+"="+password.value+";max-age=3500067;";
+  
 
 
 
@@ -123,3 +130,7 @@ log_frm.onsubmit=function()
 
  return false;
 }
+        
+
+  
+    
