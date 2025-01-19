@@ -1,0 +1,491 @@
+
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#video_b{
+    width: 70%;
+    height: 100vh;
+  float: left;
+ 
+}
+
+#list_b{
+    width: 30%;
+    height: 100vh;
+  float: right;
+  border-left: 6px solid #ddd;
+
+}
+
+#video{
+    width: 100%;
+    height: 591px;
+}
+
+#control{
+    width: 100%;
+    height: 90px;
+  
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#time,#tool,#other_tools{
+    width: 200px;
+    height: 50px;
+   
+}
+
+
+#progress{
+    width: 100%;
+    height: 14px;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+#bar{
+    width: 0px;
+    height: 12px;
+    background: linear-gradient(135deg, #ff1d00 0%,#1121ff 100%);
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    
+}
+
+#v_time{
+    color:white;
+    font-size: 21px;
+    margin: 10px 0px 0px 10px;
+}
+
+#tool i {
+    color: white;
+    font-size: 45px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#other_tools i {
+    color: white;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#top{
+    width: 100%;
+    height: 130px;
+    background-color: #ddd;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+#top h3{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+#search{
+    width: 93%;
+    height: 28px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+ 
+}
+
+#bottom{
+    width: 100%;
+    height: 81vh;
+
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+
+#list{
+    width: 100%;
+    height: 130px;
+    background-color: #d9cece;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+#play_btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    border:none;
+    height: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+#del{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border:none;
+    background-color: rgb(255, 0, 191);
+    height: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#list h2{
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-left: 15px;
+}
+
+#add_btn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+#add_v{
+    width: 80%;
+    height: 200px;
+    background-color: rgb(255, 106, 0);
+    position: absolute;
+    z-index: 3;
+    padding: 20px;
+    margin-top: 8px;
+    margin-left: 20px;
+    border-radius: 30px 0px 20px 0px;
+    display: none;
+
+}
+
+#add_v h2{
+    position: absolute;
+    font-family: sans-serif;
+    top: 10px;
+    left: 110px;
+}
+
+#add_name,#add_url{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+#add_name{
+    margin-top: 40px;
+}
+
+#add_local{
+    float: right;
+    margin-top: 20px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(234, 255, 0);
+    cursor: pointer;
+}
+
+#vol{
+    appearance: none;
+    transform: rotate(270deg);
+    position: absolute;
+    top:-90px;
+    left: -50px;
+    background-color: rgb(0, 255, 76);
+    border-radius: 5px;
+    width: 150px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+
+}
+
+#speed{
+    appearance: none;
+    transform: rotate(270deg);
+    position: absolute;
+    top:-90px;
+    left: 25px;
+    background-color: rgb(0, 255, 76);
+    border-radius: 5px;
+    width: 150px;
+    height: 20px;
+   display: none;
+    cursor: pointer;
+
+}
+
+#vol::-webkit-slider-thumb
+{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(234, 0, 255);
+}
+
+
+#speed::-webkit-slider-thumb
+{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(234, 0, 255);
+}
+
+
+
+
+
+#other_tools
+{
+    position: relative;
+    
+}
+
+/*responsive*/
+
+@media(max-width : 898px)
+{
+    #video_b{
+        width: 100%;
+        height: auto;
+    }
+
+    #list_b{
+        width: 100%;
+    }
+}   
+
+@media(max-width : 682px)
+{
+    #progress{
+        height: 13px;
+    }
+
+    #bar{
+        height: 10px;
+    }
+
+    #vol,#speed{
+        height: 15px;
+    }
+
+    #other_tools i{
+        font-size: 25px;
+    }
+
+    #tool i{
+        font-size: 30px;
+    }
+
+    #tool{
+        margin-top:10px;
+    }
+}
+
+@media(max-width : 536px)
+{
+    #progress{
+        height: 13px;
+    }
+
+    #bar{
+        height: 10px;
+    }
+
+
+    #vol{
+        left: -60px;
+    }
+
+    #speed{
+        left: -10px;
+    }
+
+    #other_tools i{
+        font-size: 22px;
+        margin-left: 5px;
+    }
+
+ #other_tools{
+    margin-left: 50px;
+    margin-top: 10px;
+ }
+
+    #tool i{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    #tool{
+        margin-top:10px;
+        margin-left: 10px;
+    }
+
+    #v_time{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+@media(max-width : 473px)
+{
+    #vol{
+        left: -60px;
+        width: 120px;
+        top: -60px;
+        height: 10px;
+    }
+
+    #speed{
+        left: -10px;
+        top: -60px;
+        width: 120px;
+        height: 10px;
+    }
+
+    #progress{
+        height: 10px;
+    }
+
+    #bar{
+        height: 8px;
+    }
+
+    #other_tools i{
+        font-size: 16px;
+        margin-left: 3px;
+    }
+
+ #other_tools{
+    margin-left: 38px;
+    padding-top: 5px;
+    margin-top: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+ }
+
+    #tool i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #tool{
+        margin-top:10px;
+        margin-left:20px;
+        padding-top: 10px;
+        margin-right: 50px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    #v_time{
+        font-size: 13px;
+    }
+
+    #time{
+        width: 400px;
+    
+        padding-top: 7px;
+    }
+
+    #control{
+        height: auto;
+     
+    }
+}
+
+
+@media(max-width : 416px)
+{
+    #add_v{
+        margin-top: 30px;
+    }
+}
+
+
+
+@media(max-width : 385px)
+{
+
+    #tool{
+   
+        position: absolute;
+        left: 100px;
+
+    }
+}
+
+
+@media(max-width : 375px)
+{
+   #add_v h2{
+    margin-left: -30px;
+   }
+}
+
+
+
+
+@media(max-width : 321px)
+{
+    #tool{
+
+        position: absolute;
+        left: 80;
+
+    }
+}
+
+
+#click{
+    text-align: center;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
