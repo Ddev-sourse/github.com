@@ -10,10 +10,7 @@ window.onload=function()
         }
         else{
             
-var a =document.getElementById("u1");
-a.onclick=function(){
-        window.open(unit1.pdf);
-}
+
 $(document).ready(function(){
     $("#box h1").click(function(){
         $("#box div").slideToggle(1000);
