@@ -404,15 +404,13 @@ body{
     
         }
         #add{
+            font-size:30px;
             postion: fixed;
-             top:300px;
-            left:20px;
+             top:10px;
+            left:10px;
             
         }
-        #tools{
-            display:flex;
-    flex-direction:row;
-        }
+        
     }
 
 
