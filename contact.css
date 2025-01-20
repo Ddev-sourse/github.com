@@ -389,10 +389,16 @@ body{
         #all_no_box,#number_box{
         border:1px solid red;
            }
+        #number_box{
+            width:100%;
+        }
+        #all_no_box{
+            margin-top:-50px;
+        }
         #add{
             postion: absolute;
-            bottom:40px;
-            right:40px;
+            bottom:-40px;
+            right:-40px;
         }
     }
 
