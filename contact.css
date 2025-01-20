@@ -150,6 +150,7 @@ body{
    
    background-color: white;
    margin-top: -60px;
+    
     float: right;
   
 
@@ -387,14 +388,15 @@ body{
         }
         
         #all_no_box{
-        border:1px solid red;
+        border:1px solid green;
            }
         #number_box{
             width:100%;
+            height:450px;
         }
         #all_no_box{
             margin-top:-100px;
-            height: 350px;
+            height: 450px;
 
     position: fixed;
     top: 200px;
@@ -404,9 +406,14 @@ body{
     
         }
         #add{
-            postion: absolute;
-             bottom: 100px;
-            right: 200px;
+            postion: fixed;
+             top:0;
+            left:0;
+            
+        }
+        #tool{
+            display:flex;
+    flex-direction:coloum;
         }
     }
 
