@@ -407,13 +407,13 @@ body{
         }
         #add{
             postion: fixed;
-             top:0;
-            left:0;
+             top:500px;
+            left:220;
             
         }
         #tool{
             display:flex;
-    flex-direction:coloum;
+    flex-direction:row;
         }
     }
 
