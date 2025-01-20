@@ -383,9 +383,7 @@ body{
         
     
         
-        #user{
-            margin-left: 100px;
-        }
+        
         
         
         #number_box{
@@ -406,9 +404,19 @@ body{
         #add{
             font-size:30px;
             postion: fixed;
-             top:10px;
+             top:20px;
             left:10px;
             
+        }
+        #user{
+    
+    margin-left: 100px;
+    font-size: 30px;
+    font-family: sans-serif;
+            }
+        #user i {
+          font-size: 27px;
+        
         }
         
     }
