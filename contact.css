@@ -386,18 +386,25 @@ body{
             margin-left: 100px;
         }
         
-        #all_no_box,#number_box{
-        border:1px solid yellow;
+        #all_no_box{
+        border:1px solid red;
            }
         #number_box{
             width:100%;
         }
         #all_no_box{
             margin-top:-100px;
-            height:100px;
+            height: 350px;
+
+    position: fixed;
+    top: 200px;
+    left: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
         }
         #add{
-            postion: fixed;
+            postion: absolute;
              bottom: 100px;
             right: 200px;
         }
