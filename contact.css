@@ -387,7 +387,7 @@ body{
         }
         
         #all_no_box,#number_box{
-        border:1px solid black;
+        border:1px solid yellow;
            }
         #number_box{
             width:100%;
@@ -397,9 +397,9 @@ body{
             height:100px;
         }
         #add{
-            postion: absolute;
-             top:0;
-            left:0;
+            postion: fixed;
+             bottom: 100px;
+            right: 200px;
         }
     }
 
