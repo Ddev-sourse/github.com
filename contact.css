@@ -387,18 +387,19 @@ body{
         }
         
         #all_no_box,#number_box{
-        border:1px solid green;
+        border:1px solid black;
            }
         #number_box{
             width:100%;
         }
         #all_no_box{
             margin-top:-100px;
+            height:100px;
         }
         #add{
             postion: absolute;
-            bottom:-40px;
-            right:-40px;
+             top:0;
+            left:0;
         }
     }
 
