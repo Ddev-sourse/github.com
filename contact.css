@@ -211,7 +211,7 @@ body{
     top: 0;
     left: 0;
    
-    display: block;
+    display: none;
 }
 
 #user i{
