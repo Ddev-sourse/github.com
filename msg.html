@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(145, 143, 139);
+        }
+        div{
+            width: 40%;
+            height: 200px;
+            background-color: green;
+            margin: 210px auto;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-left: 50px;
+            position: relative;
+            top: -430px;
+         
+        }
+        h1{
+            font-family: sans-serif;
+          margin-left: 70px;
+            
+            color: beige;
+           
+
+
+        }
+        nav{
+            width: 80%;
+            height: 30px;
+            background-color: orange;
+            margin-top: 20px;
+            border-radius: 10px;
+        padding-left: 50px;
+        font-size: 24px;
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        }
+
+       
+@media(max-width:700px)
+{
+div{
+    width: 90%;
+    height: 250px;
+}
+h1{
+           
+          margin-left: 20px;
+            
+    
+           
+
+
+        }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Choose your class</h1>
+        <nav id="11">Class 11</nav>
+        <nav id="12">Class 12</nav>
+    </div>
+
+    <script>
+
+        window.onload=function()
+        {
+            var a = sessionStorage.getItem("user");
+            if(a==null)
+        {
+            window.location.replace("index.html");
+        
+        }
+        else{
+
+     
+        
+        $(document).ready(function(){
+            $("div").animate({"top" : "0px"},1000);
+            $("#11").click(function(){
+                window.location="class11.html";
+            });
+
+            $("#12").click(function(){
+                window.location="class12.html";
+            });
+        });
+    }
+
+    }
+    </script>
+</body>
+</html>
