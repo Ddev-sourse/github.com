@@ -93,7 +93,7 @@
 		var btn_out_name = document.getElementById("btn_logout");
 		btn_out.onclick=function(){
 			btn_out_name.innerHTML="Please wait !";
-		
+		        btn_out_name.style.fontSize="24px";
 			setTimeout(function(){
 				sessionStorage.clear();
 				window.location.reload();
