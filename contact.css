@@ -56,6 +56,7 @@ body{
    bottom: 100px;
    right: 200px;
    cursor: pointer;
+    index-z:2;
 
 }
 
@@ -390,7 +391,7 @@ body{
        width: 100%;
             margin-top:-100px;
     
-    height: 450px;
+    height: 350px;
 
     position: fixed;
     top: 150px;
