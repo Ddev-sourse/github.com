@@ -56,7 +56,7 @@ body{
    bottom: 100px;
    right: 200px;
    cursor: pointer;
-    index-z:2;
+    
 
 }
 
@@ -386,29 +386,15 @@ body{
             margin-left: 100px;
         }
         
-        #all_no_box{
-       margin-left: -450px;
-       width: 100%;
-            margin-top:-100px;
-    
-    height: 350px;
-
-    position: fixed;
-    top: 150px;
-    left: 450px;
-    padding-left: 10px;
-    padding-right: 10px;
-
- 
+        #all_no_box,#number_box{
+        border:1px solid red;
            }
-        #number_box{
-            width:100%;
+        #add{
+            postion: absolute;
+            bottom:40px;
+            right:40px;
         }
-
-        #for_r{
-            width:100%;
-            border:1px solid red;
-        }
+    }
 
 
         @media(max-width :375px){
