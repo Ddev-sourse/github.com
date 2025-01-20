@@ -389,10 +389,24 @@ body{
        margin-left: -450px;
        width: 100%;
             margin-top:-100px;
-    }
+    
+    height: 450px;
+
+    position: fixed;
+    top: 150px;
+    left: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+ 
+           }
+        #number_box{
+            width:100%;
+        }
 
         #for_r{
             width:100%;
+            border:1px solid red;
         }
 
 
