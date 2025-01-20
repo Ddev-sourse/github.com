@@ -385,7 +385,14 @@ body{
             margin-left: 100px;
         }
         
-        
+        #all_no_box{
+       margin-left: -450px;
+       width: 100%;
+            margin-top:-100px;
+    }
+
+        #for_r{
+            width:100%;
         }
 
 
